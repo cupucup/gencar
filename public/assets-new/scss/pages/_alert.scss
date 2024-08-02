@@ -1,0 +1,252 @@
+/* ALERTS SECTION CSS START HERE */
+.alerts{
+    .alert_box{ 
+        .alert{
+            display: flex;
+            align-items: center;
+            position: relative;
+            padding: 15px 20px;
+            margin-bottom: 20px;
+            box-shadow: 3px 0px 15px #e7e7e7;
+            @media (max-width: 991px){
+                align-items: flex-start;
+            }
+            svg{
+                margin: 0 10px 0 0;
+                min-width: 20px;
+                min-height: 20px;
+            }
+           
+            .content{
+                font-size: 14px;
+                padding-right: 20px;
+                line-height: 1.5;
+                span{
+                    margin: 0 5px 0 0;
+                    font-weight: 700;
+                    line-height: 1.4;
+                }
+            }
+            &.success_box{
+                border-left: 3px solid #3edd00;
+                border-radius: 5px;
+                span,
+                .close{
+                    color: #3edd00;
+                }
+                p{
+                    color: #32b100;
+                }
+            }
+            &.info_box{
+                border-left: 3px solid #45ABCD;
+                border-radius: 5px;
+                span,
+                .close{
+                    color: #45ABCD;
+                }
+                p{
+                    color: #03b2d1;
+                }
+            }
+            &.warning_box{
+                border-left: 3px solid #f9d300;
+                border-radius: 5px;
+                span,
+                .close{
+                    color: #f9d300;
+                }
+                p{
+                    color: #c7a900;
+                }
+            }
+            &.danger_box{
+                border-left: 3px solid #e71b2e;
+                border-radius: 5px;
+                span,
+                .close{
+                    color: #e71b2e;
+                }
+                p{
+                    color: #95000e;
+                }
+            }
+            &.primary_box{
+                border-left: 3px solid #007bff;
+                border-radius: 5px;
+                span,
+                .close{
+                    color: #007bff;
+                }
+                p{
+                    color: #0150a6;
+                }
+            }
+            &.secondary_box{
+                border-left: 3px solid #616161;
+                border-radius: 5px;
+                span,
+                .close{
+                    color: #616161;
+                }
+                p{
+                    color: #333537;
+                }
+            }
+            &.dark_box{
+                border-left: 3px solid #333639;
+                border-radius: 5px;
+                span,
+                .close{
+                    color: #333639;
+                }
+                p{
+                    color: #232527;
+                }
+            }
+            &.light_box{
+                border-left: 3px solid #a7a7a7;
+                border-radius: 5px;
+                span,
+                .close{
+                    color: #a7a7a7;
+                }
+                p{
+                    color: #787878;
+                }
+            }
+            .close{
+                position: absolute;
+                right: 10px;
+                top: 50%;
+                transform: translateY(-50%);
+                font-size: 25px;
+                font-weight: 600;
+            }
+        }
+        &.two{
+            .alert{
+                span,
+                .close{
+                    color: $white;
+                }
+                p{
+                    color: rgba(255,255,255,0.7);
+                }
+            }
+            .success_box{
+                background: #56ab2f;
+                border: none;
+            }
+            .info_box{
+                background: #2193b0;
+                border: none;
+            }
+            .warning_box{
+                background: #ED8F03;
+                border: none;
+            }
+            .danger_box{
+                background: #cb2d3e;
+                border: none;
+            }
+            .primary_box{
+                background: #2948ff;
+                border: none;
+                svg{
+                    background: $white;
+                    width: 22px;
+                    height: 22px;
+                    padding: 2px;
+                    border-radius: 100%;
+                }
+            }
+            .secondary_box{
+                background: #616161;
+                border: none;
+                
+            }
+            .dark_box{
+                background: #232526;
+                border: none;
+                svg{
+                    background: $white;
+                    width: 22px;
+                    height: 22px;
+                    padding: 2px;
+                    border-radius: 100%;
+                }
+            }
+            .light_box{
+                background: #d3d3d3;
+                border: none;
+                svg{
+                    background: $white;
+                    width: 22px;
+                    height: 22px;
+                    padding: 2px;
+                    border-radius: 100%;
+                }
+            }
+        }
+        &.three{
+            .alert{
+                padding: 15px 30px;
+                .close{
+                    opacity: 0.5;
+                }
+                &.alert-success{
+                    border: 1px solid rgba(21, 87, 36, 0.5);
+                    .close,
+                    p{
+                        color: #155724;
+                    }
+                }
+                &.alert-info{
+                    border: 1px solid rgba(12, 84, 96, 0.5);
+                    background: #d1ecf1;
+                }
+                &.alert-warning{
+                    border: 1px solid rgba(133, 100, 4, 0.5);
+                    .close,
+                    p{
+                        color: #856404;
+                    }
+                }
+                &.alert-danger{
+                    border: 1px solid rgba(114, 28, 36, 0.5);
+                    .close,
+                    p{
+                        color: #721c24;
+                    }
+                }
+                &.alert-primary{
+                    border: 1px solid rgba(0, 64, 133, 0.5);
+                    .close,
+                    p{
+                        color: #004085;
+                    }
+                }
+                &.alert-secondary{
+                    border: 1px solid rgba(56, 61, 65, 0.5);
+                    .close,
+                    p{
+                        color: #383d41;
+                    } 
+                }
+                &.alert-dark{
+                    border: 1px solid rgba(27, 30, 33, 0.5);
+                    .close,
+                    p{
+                        color: #1b1e21;
+                    } 
+                }
+                &.alert-light{
+                    border: 1px solid rgba(129, 129, 130, 0.5);
+                }
+            }
+
+        }
+    }
+}
+/* ALERTS SECTION CSS END HERE */ 

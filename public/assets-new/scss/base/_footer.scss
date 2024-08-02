@@ -1,0 +1,296 @@
+/*  FOOTER CSS START HERE */
+footer {
+    .website-footer {
+        padding: 60px 0 50px 0;
+        @media (max-width: 480px) {
+            padding: 40px 0 50px 0;
+        }
+        .our-information {
+            color: #777777;
+            max-width: 320px;
+            line-height: 1.7;
+            font-size: 15px;
+            @media (max-width:767px) {
+                margin: 0 auto;
+                text-align: center;
+            }
+            .website-logo {
+                display: block;
+                h2{
+                    font-size: 30px;
+                    margin-bottom: 0;
+                    font-weight: bold;
+                    background: -webkit-linear-gradient(#6e2ec0, #0094e2);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+            }
+            .web-about {
+                color: #777777;
+                font-size: 14px;
+                line-height: 26px;
+                margin: 15px 0;
+            }
+            .social-icon {
+                display: flex;
+                align-items: center;
+                @media (min-width:768px) and (max-width:991px) {
+                    margin-bottom: 30px;
+                    overflow: hidden;
+                }
+                @media (max-width:767px) {
+                    padding-bottom: 20px;
+                    justify-content: center;
+                }
+                a{
+                    padding-right: 7px;
+                    i.icon{ 
+                        height: 35px;
+                        width: 35px;
+                        margin-top: 0px;
+                        transition: all 0.5s;
+                        color: #000;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 50%;
+                        transition: all 0.3s;
+                    }
+                    &:hover{
+                        transition: all 0.5s;
+                        i.icon{
+                            color: #FFF;
+                            background: $theme;
+                        }
+                    }
+                }
+            }
+        }
+        .footer-links {
+            .footer-title {
+                font-size: 18px;
+                line-height: 1.5;
+                font-weight: 600;
+                background: -webkit-linear-gradient(#6e2ec0, #0094e2);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                text-transform: capitalize;
+                &.mob {
+                    &[aria-expanded="true"] {
+                        .footer-toggler {                       
+                            transform: translateY(-50%) rotate(-180deg);                        
+                        }
+                    }
+                    @media (max-width: 767px) {
+                        display: block;
+                        position: relative;
+                        .footer-toggler {
+                            transform: translateY(-50%);
+                            top: 50%;
+                            position: absolute;
+                            right: 0;
+                            line-height: 0;
+                            display: block;
+                            margin-left: 25px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border-radius: 50%;
+                            width: 15px;
+                            height: 10px;
+                            transition: all 0.3s;
+                        }
+                    }
+                    @media(min-width: 768px) {
+                        .footer-toggler {
+                            display: none;
+                        }
+                    }
+                }
+            }
+            .footer-toggler {
+                p {
+                    font-size: 15px;
+                    line-height: 1.5;
+                    color: #777777;
+                    margin: 25px 0;
+                }
+                .form-subscribe {
+                    max-width: 600px;
+                    margin: 0 auto;
+                    box-shadow: 0px 3px 10px 0px #cccccc8c;
+                    border-radius: 30px;
+                    .form-control {
+                        background-color: #ffffffcc;
+                        padding-left: 24px;
+                        padding-right: 24px;
+                        letter-spacing: 1px;
+                        border: none;
+                        border-top-left-radius: 36px;
+                        border-bottom-left-radius: 36px;
+                        &:focus {
+                            z-index: 2;
+                            background-color: #ffffffcc;
+                            box-shadow: none;
+                        }
+                    }
+
+                    .form-control.focus {
+                        z-index: 2;
+                        background-color: #ffffffcc;
+                    }
+
+                    .btn-1 {
+                        border-top-right-radius: 36px;
+                        border-bottom-right-radius: 36px;
+                        background: linear-gradient(45deg, rgb(109, 46, 192) 0%, rgb(0, 147, 226) 100%);
+                        height: 46.5px;
+                        border: none;
+                        width: 46px;
+                    }
+                }
+            }
+            h2 {
+                color: #222222;
+                font-size: 22px;
+                line-height: 1.5;
+                letter-spacing: 1px;
+                margin-bottom: 20px;
+            }
+            ul {
+                li {
+                    a {
+                        color: #777777;
+                        font-size: 15px;
+                        transition: 0.3s all;
+                        position: relative;
+                        &::after{
+                            content: '';
+                            position: absolute;
+                            background-color: #fff;
+                            height: 1px;
+                            width: 0;
+                            left: 0;
+                            bottom: -5px;
+                            transition: all 0.6s;
+                        }
+                        &:hover {
+                            color: $theme;
+                            &::after{
+                                left: 60%;
+                                transform: translateX(0%);
+                                width: 40%;
+                                background-color: #053845;
+                            }
+                        }
+                    }
+                }
+                .contacts {
+                    display: flex;
+                    margin-bottom: 20px;
+                    align-items: center;
+                    &:last-child{
+                        align-items: flex-start;                        
+                    }
+                    .icon {
+                        width: 18px;
+                        height: 18px;
+                    }
+                    .details {
+                        .text {
+                            color: #777777;
+                            padding-left: 10px;
+                            line-height: 25px;
+                            font-size: 15px;
+                            transition: 0.3s all;
+                            &.location {
+                                line-height: 1.5;
+                            }
+                            a {
+                                color: #777777;
+                                transition: 0.3s all;
+                                &:hover {
+                                    color: $theme;
+                                }
+                            }
+                        }
+                    }
+                }
+                &.foot {
+                    @media(min-width: 768px) {
+                        display: block;
+                        height: 100%;
+                    }
+                }
+            }
+            .recent-posts {
+                .post {
+                    display: flex;
+                    padding-bottom: 20px;
+                    .post-img {
+                        min-width: 60px;
+                        width: 60px;
+                        height: 60px;
+                        object-fit: cover;
+                        object-position: center;
+                    }
+                    .post-content {
+                        line-height: 1.4;
+                        color: $white;
+                        padding-left: 15px;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 2;
+                        height: 45px;
+                        -webkit-box-orient: vertical;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        cursor: pointer;
+                        transition: 0.3s all;
+                        &:hover{
+                            color: $theme;
+                        }
+                    }
+                }
+            }
+        }
+        .social-icon-mob {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 20px;
+            @media (min-width: 992px) {
+                display: none;
+            }
+            a {
+                display: flex;
+                padding-right: 18px;
+            }
+        }
+    }
+    &.bg{
+        background: #f8f8f8;
+    }
+}
+.copy-right {
+    border-top: 1px solid #e4e4e4;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    .copy-content {
+        font-size: 14px;
+        color: #777777;
+        letter-spacing: 0.5px;
+        text-align: center;
+        margin-bottom: 0px;
+        @media (max-width: 767px) {
+            font-size: 14px;
+        }
+        .web-name{
+            color: $theme;
+            &:hover{
+                color: $theme;
+            }
+        }
+    }
+}
+
+/*  FOOTER CSS START HERE */

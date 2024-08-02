@@ -1,0 +1,158 @@
+/* CONTACT US SECTION CSS START HERE */
+.contact_page{
+    .get_touch{
+        padding-top: 40px;
+    }
+    .section_heading{
+        h2{
+            color: #222;
+            font-weight: 500;
+            padding-bottom: 7px;
+            margin-bottom: 30px;
+            &:after{
+                height: 2px;
+                background: $theme;
+                width: 50px;
+                @media (min-width: 992px){
+                    left: 0;
+                    transform: none;
+                }
+            }
+        }
+    }
+    .get_title1{
+        p{
+            @media (max-width: 991px){
+                text-align: center;
+            }
+        }
+        .address_box,
+        .call_box{
+            margin-top: 30px;
+            display: flex;
+            align-items: flex-start;
+            .icon{
+                width: 55px;
+                height: 55px;
+                border-radius: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                box-shadow: 0px 2px 7px 0px #d1d1d1;
+                border: 1px solid #0094e263;
+                @media (max-width:991px) {
+                    margin: 0 auto 15px;
+                }
+            }
+            img{
+                min-height: 15px;
+                min-width: 15px;
+            }
+            @media (max-width: 991px){
+                display: block;
+                text-align: center;
+            }
+            .address,
+            .call{
+                margin-left: 15px;
+                @media (max-width:991px) {
+                    margin: 0;
+                }
+                h4{
+                    color: #343e43;
+                    font-size: 18px;
+                    margin-bottom: 0;
+                }
+                a{
+                    font-size: 14px;
+                    color: #777777;
+                    transition: all 0.5s;
+                    &:hover{
+                        color: $theme;
+                    }
+                }
+            }
+        }
+    }
+    
+    .contact_form{
+        .contact_form_detail{
+                margin-bottom: 30px;
+                outline: none;
+                -webkit-box-shadow: 0 0 0 1000px rgba(244, 246, 249, 0.3) inset !important;
+                -webkit-text-fill-color: #313131 !important;
+                -webkit-box-shadow: 0px 3px 10px 0px rgba(204, 204, 204, 55%);
+                box-shadow: 0px 3px 10px 0px rgba(253, 253, 253, 0.55);
+                @media (max-width: 1399px){
+                    margin-bottom: 20px;
+                }
+        }
+        textarea{
+            margin-top: 0;
+            resize: none;
+        }
+        .text-start{
+            .submit_btn{
+                padding: 8px 40px;
+                font-size: 14px;
+                background: $theme;
+                color: #FFF;
+                border: none;
+                &:hover{
+                    box-shadow: 0px 15px 20px 0px rgba(110,46,92,0.2);
+                    background: $theme;
+                    color: #FFF;
+                    border: none;
+                }
+                @media screen and (max-width: 767px){
+                    margin: 0 auto;
+                    display: block;
+                }                
+            }
+        }
+        .form-group{
+            .input-group{
+                width: 100%;
+                position: relative;
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .custom-file-uploader{
+                padding: 5px 10px;
+                position: relative;
+                left: 0;
+                border-radius: 0px 50px 50px 0px;
+                background-color: $theme;
+                color: #fff;
+                font-size: 15px;
+                input[type='file'] {
+                    display: block;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    left: 0;
+                    z-index: 5;
+                    width: 100%;
+                    height: 100%;
+                    opacity: 0;
+                    cursor: default;
+                }
+            }
+        }
+        .form{
+            @media (max-width: 991px){
+               margin-bottom: 0px;
+            }
+        }
+    }
+    .contact_main{
+        padding: 40px;
+        border-radius: 10px;
+        box-shadow: 0px 2px 7px 0px #d1d1d1;
+        @media (max-width: 767px){
+            padding: 40px 20px;
+        }
+    }
+}
+/* CONTACT US SECTION CSS END HERE */

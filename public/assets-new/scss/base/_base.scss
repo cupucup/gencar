@@ -1,0 +1,844 @@
+*,
+*::after,
+*::before {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: inherit;
+    -webkit-tap-highlight-color: transparent;
+    -tap-highlight-color:transparent;
+    -moz-tap-highlight-color:transparent;
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url('../font/poppins/Poppins-Regular.woff2') format('woff2'),
+        url('../font/poppins/Poppins-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url('../font/poppins/Poppins-ExtraLight.woff2') format('woff2'),
+        url('../font/poppins/Poppins-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../font/poppins/Poppins-Bold.woff2') format('woff2'),
+        url('../font/poppins/Poppins-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../font/poppins/Poppins-ExtraBold.woff2') format('woff2'),
+        url('../font/poppins/Poppins-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../font/poppins/Poppins-Light.woff2') format('woff2'),
+        url('../font/poppins/Poppins-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../font/poppins/Poppins-SemiBold.woff2') format('woff2'),
+        url('../font/poppins/Poppins-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../font/poppins/Poppins-Medium.woff2') format('woff2'),
+        url('../font/poppins/Poppins-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../font/poppins/Poppins-Black.woff2') format('woff2'),
+        url('../font/poppins/Poppins-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../font/poppins/Roboto-Regular.woff2') format('woff2'),
+        url('../font/poppins/Roboto-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../font/poppins/Poppins-Thin.woff2') format('woff2'),
+        url('../font/poppins/Poppins-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat-Black';
+    src: url('../font/montserrat/Montserrat-Black.ttf') format('ttf');
+    src: url('../font/montserrat/Montserrat-Black.woff2') format('woff2'),
+        url('../font/montserrat/Montserrat-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url('../font/montserrat/Montserrat-Bold.ttf') format('ttf');
+    src: url('../font/montserrat/Montserrat-Bold.woff2') format('woff2'),
+        url('../font/montserrat/Montserrat-Bold.woff') format('woff');
+     font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat-ExtraBold';
+    src: url('../font/montserrat/Montserrat-ExtraBold.ttf') format('ttf');
+    src: url('../font/montserrat/Montserrat-ExtraBold.woff2') format('woff2'),
+        url('../font/montserrat/Montserrat-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat-Medium';
+    src: url('../font/montserrat/Montserrat-Medium.ttf') format('ttf');
+    src: url('../font/montserrat/Montserrat-Medium.woff2') format('woff2'),
+        url('../font/montserrat/Montserrat-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src: url('../font/montserrat/Montserrat-Regular.ttf') format('ttf');
+    src: url('../font/montserrat/Montserrat-Regular.woff2') format('woff2'),
+        url('../font/montserrat/Montserrat-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat-SemiBold';
+    src: url('../font/montserrat/Montserrat-SemiBold.ttf') format('ttf');
+    src: url('../font/montserrat/Montserrat-SemiBold.woff2') format('woff2'),
+        url('../font/montserrat/Montserrat-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+	box-sizing: border-box;
+    font-family: $primary-font;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    font-size: 16px;
+    line-height: 30px;
+}
+html{scroll-behavior: smooth;height: 100%;}
+section{flex: 1 0 auto;}
+::-webkit-input-placeholder, ::-moz-placeholder, :-ms-input-placeholder, ::placeholder {
+    font-family: $primary-font;
+    font-size: 14px;
+}
+button:focus{
+    box-shadow: none !important;
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.page_loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .loader {
+        display: block;
+        position: relative;
+        left: 0%;
+        top: 0%;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        border: 3px solid rgba(0,0,0,0);
+        border-top-color: #0094e2;
+        animation: spin 2s linear infinite;
+        z-index: 1001;
+        &:before{
+            content: "";
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            right: 5px;
+            bottom: 5px;
+            border-radius: 50%;
+            border: 3px solid transparent;
+            border-top-color: #0c9fed;
+            -webkit-animation: spin 3s linear infinite;
+            animation: spin 3s linear infinite;
+        }
+        &:after{
+            content: "";
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            right: 15px;
+            bottom: 15px;
+            border-radius: 50%;
+            border: 3px solid transparent;
+            border-top-color: #15a9f8;
+            -webkit-animation: spin 1.5s linear infinite;
+            animation: spin 1.5s linear infinite;
+        }
+    }
+    
+}
+@-webkit-keyframes spin {
+    0% {
+    -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: rotate(0deg);  /* IE 9 */
+    transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
+   }
+    100% {
+    -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: rotate(360deg);  /* IE 9 */
+    transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
+   }
+   }
+   @keyframes spin {
+    0% {
+    -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: rotate(0deg);  /* IE 9 */
+    transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
+   }
+    100% {
+    -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: rotate(360deg);  /* IE 9 */
+    transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
+   }
+   }
+
+
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+.f-0{font-size: 0;line-height: 0;}
+button {
+    background: transparent;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+img {
+    max-width: 100%;
+}
+a {
+    text-decoration: none;
+    color: $theme;
+}
+p{
+    color: $light-gray;
+    margin: 0 0 15px;
+    font-size: 14px;
+    text-transform: none;
+    font-weight: 400;
+    &:last-child{
+        margin-bottom: 0;
+    }
+}
+.btn {
+    display: inline-block;
+    text-transform: capitalize;
+    transition: all 0.35s ease-in-out;
+    overflow: hidden;
+    border-radius: 0px;
+    font-size: 16px;
+    border: none;
+    min-width: 175px;
+    padding: 11px 20px;
+    background: $theme;
+    color: $white;
+    position: relative;
+    text-transform: uppercase;
+    border-radius: 15px;
+    box-sizing: border-box;
+    span{
+        position: relative;
+        z-index: 2;
+    }  
+    &:hover{
+        background: $white;
+        color: $black;
+    }
+    &.white{
+        background: $white;
+        color: $theme;
+        border: 2px solid $white;
+        padding: 10px 20px;
+        &:hover{
+            background: transparent;
+            color: $white;
+        }
+    }
+    &.transparent{
+        background: transparent;
+        border: 2px solid $white;
+        padding: 10px 20px;
+        &:hover{
+            background: $white;
+            color: $theme;
+        }
+    }
+    @media screen and (max-width:991px) {
+        min-width: 150px;
+        padding: 10px 16px;
+    }
+}
+.default-padding {
+    padding: 70px 0;
+    @media screen and (max-width:1399px){
+        padding: 60px 0;
+    }
+    @media screen and (max-width: 1199px){
+        padding: 50px 0;
+    }
+    @media screen and (max-width:991px){
+        padding: 40px 0;
+    }
+    @media screen and (max-width: 575px){
+        padding: 30px 0;
+    }
+}
+.default-padding-bottom{
+    padding: 0 0 60px 0;
+    @media screen and (max-width:575px){
+        padding: 0 0 40px 0;
+    }
+}
+.default-padding-top{
+    padding: 60px 0 0 0;
+    @media screen and (max-width:575px){
+        padding: 40px 0 0 0;
+    }
+}
+/* SITE HEADING CSS START HERE */
+.heading {
+    margin-bottom: 30px;
+    @media(max-width: 767px) {
+        text-align: center;
+    }
+    h2, h3 {
+        font-size: 30px;
+        color: #222222;
+        font-weight: bold;
+        text-transform: capitalize;
+        position: relative;
+        padding-bottom: 12px;
+        margin-bottom: 15px;
+        font-family: $Montserrat-SemiBold;
+        &:last-child{
+            margin-bottom: 0;
+        }
+        &::after {
+            position: absolute;
+            content: '';
+            background: $theme;
+            bottom: 0;
+            content: "";
+            height: 2px;
+            left: 50%;
+            margin-left: -25px;
+            position: absolute;
+            width: 50px;
+        }
+        @media(max-width: 991px) {
+            font-size: 32px;
+        }
+        @media(max-width: 575px) {
+            font-size: 24px;
+        }
+    }
+    &.left{        
+        h2,h3{
+            &::before{
+                left: 0;
+                margin-left: 60px;                
+                @media(max-width: 991px) {
+                    left: 0;
+                    right: -40px;
+                    margin: auto;
+                }
+            }
+            &::after{
+                left: 0;
+                margin-left: 0;
+                @media(max-width: 991px) {
+                    left: -40px;
+                    right: 0;
+                    margin: auto;
+                }
+            }
+        }
+    }
+    p{
+        font-size: 14px;
+        color: #232323;
+        text-align: center;
+        line-height: 26px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 15px;
+        max-width: 730px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+}
+/* SITE HEADING CSS END'S HERE */
+
+/* FORM GROUP CSS START HERE */
+form {
+    label {
+        font-size: 15px;
+        color: #282828;
+    }
+    textarea {
+        min-height: 150px;
+        max-height: 150px;
+    }
+    .form-group{
+        padding-bottom: 20px;
+        .user-input {
+            padding: 15px;
+            border: 0;
+            border-bottom: 1px solid #DDE3E4;
+            background: transparent;
+            color: $white;
+            display: inline-block;
+            font-size: 14px;
+            line-height: 20px;
+            width: 100%;
+            text-overflow: ellipsis;
+            word-wrap: break-word;
+            -webkit-appearance: none;
+            position: relative;
+            transition: 0.3s all;
+            &:focus {
+                outline: none;
+                border: 0;
+                border-bottom: 1px solid $theme;
+                &::-webkit-input-placeholder{
+                    color: $white !important;
+                }
+            }
+            &::-webkit-input-placeholder {
+                font-size: 15px;
+                line-height: 20px;
+                color: rgba(112, 122, 133, 0.3) !important;
+            }
+        }
+    }
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px #ffffff inset !important;
+    -webkit-text-fill-color: #777777 !important;
+    transition: background-color 5000s ease-in-out 0s;
+    background-color: transparent;
+    color: $white;
+    // -webkit-box-shadow: 0 0 0 1000px #fff inset !important;
+    // -webkit-text-fill-color: #23282A !important;
+}
+/* FORM GROUP CSS END'S HERE */
+
+
+/* BREADCRUMB BLOCK CSS START HERE */
+.breadcrumb_wrapper{
+    padding: 150px 0 100px 0;
+    // margin-bottom: 60px;
+    position: relative;
+    @media (max-width: 1399px){
+        padding: 140px 0 80px 0;
+    }
+    @media (max-width: 1199px){
+        padding: 120px 0 60px 0;
+    }
+    @media (max-width: 991px){
+        padding: 100px 0 50px 0;
+    }
+    @media (max-width: 767px){
+        padding: 90px 0 30px 0;
+        // margin-bottom: 50px;
+    }
+    &.about{
+        background: url(../images/breadcrumb-bg/about_pagebg.webp) no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    &.service{
+        background: url(../images/breadcrumb-bg/services_bg.webp) no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    &.project{
+        background: url(../images/breadcrumb-bg/team_bg.webp) no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    &.pricing{
+        background: url(../images/breadcrumb-bg/blog_bg.webp) no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    &.faqs{
+        background: url(../images/breadcrumb-bg/faq_bg.webp) no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    &:after{
+        content: "";
+        background: #0a3181c7;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        opacity: 0.8;          
+    }
+    .breadcrumb_block{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        flex-wrap: wrap;
+        z-index: 2;
+        text-align: center;
+        h1{
+            color: $white;
+            font-size: 32px;
+            text-transform: capitalize;
+            span{
+                color: $theme;
+            }
+            @media screen and (max-width:1199px){
+                font-size: 36px;
+            }
+            @media screen and (max-width:991px){
+                font-size: 28px;
+            }
+            @media screen and (max-width:767px){
+                font-size: 22px;
+                font-weight: 600;
+            }
+        }
+        .trackPage{
+            display: block;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            a,span{
+                color: $white;
+                font-size: 14px;
+                text-transform: capitalize;
+                line-height: 30px;
+                &::after{
+                    content: "/";
+                    color: $white;
+                    font-size: 14px;
+                    margin-right: 7px;
+                    margin-left: 7px;
+                }
+                @media screen and (max-width:1199px){
+                    font-size: 16px;
+                }
+                @media screen and (max-width:767px){
+                    font-size: 14px;
+                }
+            }
+            span{
+                &::after{
+                    content: none;
+                }
+            }
+            // a{
+            //     transition: all 0.5s ease;
+            //     &:hover{
+            //         color: $black;
+            //     }
+            // }
+        }
+    }
+}
+/* BREADCRUMB BLOCK CSS END'S HERE */
+/*TITLE_BOX BLOCK START HERE*/ 
+.title_box{
+    @include title_box;
+}
+/*TITLE_BOX BLOCK END'S HERE*/ 
+
+/* SECTION HEADING COMMON CSS START HERE */ 
+.section_heading{
+    @media (max-width: 991px){
+        text-align: center;
+    }
+    h2{
+        font-size: 30px;
+        color: $black;
+        line-height: 1.2;
+        position: relative;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        font-weight: 600;
+        @media (max-width: 767px){
+            padding-bottom: 15px;
+            margin-bottom: 15px;
+            font-size: 26px;
+        }
+        @media (max-width: 575px){
+            font-size: 24px;
+        }
+        @media (max-width: 375px){
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+        }
+        &:after{
+            content: "";
+            position: absolute;
+            width: 50px;
+            height: 2px;
+            background: $theme;
+            left: 50%;
+            bottom: 0;
+            transform: translateX(-50%);
+        }
+    }
+}
+/* SECTION HEADING COMMON CSS END'S HERE */
+
+/* BUTTON CSS START HERE */
+.common_btn{
+    text-transform: uppercase;
+    font-size: 14px;
+    text-align: center;
+	color: #fff;
+	background: linear-gradient(45deg, rgba(109,46,192,1) 0%, rgba(0,147,226,1) 100%);
+    // background: $theme;
+	padding: 10px 38px;
+	border-radius: 10px;
+    max-width: 170px;
+    display: block;
+    overflow: hidden;
+    margin-top: 30px;
+	transition: all 0.3s;
+    position: relative;
+    @media (max-width: 991px){
+        margin: 30px auto 0 auto;
+    }
+    &:hover{
+        color: #fff;
+        box-shadow: 0px 4px 15px 0px #594cca;
+    }
+}
+/* BUTTON CSS END HERE */ 
+
+/* SCROLL TO TOP BUTTON CSS START HERE */
+#button{
+    display: inline-block;
+    background: linear-gradient(45deg, rgb(109, 46, 192) 0%, rgb(0, 147, 226) 100%);
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // box-shadow: 0 0 10px 0 rgba(54, 54, 54, 54, 0.1);
+    text-align: center;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 99;
+    -webkit-transition: 0.3s all;
+    transition: 0.3s all;
+    cursor: pointer;
+    svg{
+        path{
+            transition: 0.3s all;
+        }
+    }
+    &:hover{
+        box-shadow: unset;
+        transition: 0.3s all;
+        svg{
+            path{
+                fill: $black;
+                transition: 0.3s all;
+            }
+        }
+    }
+    @media (max-width: 575px){
+        width: 45px;
+        height: 45px;
+        right: 20px;
+        bottom: 45px;
+    }
+    &.show {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+/* SCROLL TO TOP BUTTON CSS END HERE */ 
+
+.form-control {
+    &:focus {
+        box-shadow: none;
+        outline: none;
+    }
+}
+
+.font-italic{
+    font-style: italic;
+}
+
+textarea{
+    resize: none;
+}
+
+.hidden{
+    overflow: hidden;
+}

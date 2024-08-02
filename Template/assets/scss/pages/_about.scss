@@ -1,0 +1,246 @@
+/*  ABOUT US CSS START HERE */
+.client-say {
+    .client-say-content {
+        text-align: center;
+        padding-bottom: 30px;
+        h2 {
+            color: $black;
+            margin-bottom: 50px;
+        }
+        p {
+            color: $gray;
+        }
+    }
+    .clientSwiper {
+        .swiper-wrapper {
+            .swiper-slide {
+                border: 6px solid $theme;
+                padding: 24px;
+                cursor: pointer;
+                transition: 0.3s all;
+                box-sizing: border-box;
+                @media (max-width: 575px) {
+                    padding: 22px;
+                }
+                @media (max-width: 375px) {
+                    padding: 20px;
+                }
+                .client-details {
+                    align-items: center;
+                    padding-bottom: 20px;
+                    position: relative;
+                    .d-flex{
+                        img{
+                            border-radius: 100%;
+                        }
+                    }
+                    .client-info {
+                        padding-left: 30px;
+                        @media (max-width: 991px) {
+                            padding-left: 15px;
+                        }
+                        h6 {
+                            font-size: 20px;
+                            color: $theme;
+                            font-weight: 700;
+                            margin-bottom: 0;
+                            padding-bottom: 5px;
+                            text-overflow: ellipsis;
+                            overflow: hidden;
+                            white-space: nowrap;
+                            width: 150px;
+                        }
+                    }
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        background: url(../images/icons/quote-white.svg) no-repeat;
+                        right: -5px;
+                        top: 0;
+                        width: 30px;
+                        height: 30px;
+                        background-size: contain;
+                        filter: brightness(0.5);
+                        @media (max-width: 375px) {
+                            right: -12px;
+                        }
+                    }
+                }
+                &:hover{
+                    background: $theme;
+                    .client-details{
+                        h6, p{
+                            color: $white;
+                        }
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            background: url(../images/icons/quote-white.svg) no-repeat;
+                            right: -5px;
+                            top: 0;
+                            width: 30px;
+                            height: 30px;
+                            background-size: contain;
+                            filter: brightness(1);
+                            @media (max-width: 375px) {
+                                right: -12px;
+                            }
+                        }
+                    }
+                    p{
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+}
+/*  ABOUT US CSS END HERE */
+
+
+
+/* ABOUT BANNER CSS START HERE */
+.about_page{
+    @media (max-width: 575px){
+        padding-bottom: 40px;
+    }
+    .about_page_img{
+        line-height: 0;
+    }
+    .section_heading{
+        h2{
+            color: #222;
+            &:after{
+                @media (min-width: 992px){
+                    left: 0;
+                    transform: none;
+                }
+            }
+        }
+    }
+    .about_pages_con{
+        margin-bottom: 50px;
+        @media (max-width: 991px){
+            margin-bottom: 50px;
+            text-align: center;
+        }
+        @media (max-width: 575px){
+            margin-bottom: 0;
+        }
+    }
+}
+/* ABOUT BANNER CSS END HERE */
+
+/* ABOUT VIDEO CSS START HERE */
+.about_video{
+    .full_video_con{
+        margin-right: 30px;
+        @media (max-width: 1399px){
+            margin-right: 10px;
+        }
+        @media (max-width: 991px){
+            margin-right: 0;
+            margin-bottom: 30px;
+        }
+        .section_heading{
+            h2{
+                text-align: right;
+                @media (max-width: 991px){
+                    text-align: center;
+                }
+                &:after{
+                    @media (min-width: 992px){
+                        left: unset;
+                        right: 0;
+                        transform: none;
+                    }
+                }
+            }
+        }
+        .video_con{
+            text-align: right;
+            @media (max-width: 991px){
+                text-align: center;
+            }
+        }
+    }
+    .video_background{
+        line-height: 0;
+        position: relative;
+        @media (max-width: 575px){
+            text-align: center;
+        }
+        .video_play1{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            cursor: pointer;
+            img{
+                @media (max-width: 767px){
+                    max-width: 80px;
+                }
+            }
+        }
+        img{
+            @media (max-width: 575px){
+                max-width: 300px;
+            }
+        }
+    }
+}
+
+.modal{
+    &#myModal{
+        .modal-dialog{
+            max-width: 900px;
+            @media (max-width: 991px){
+                max-width: 700px;
+            }
+            .modal-content{
+                background: none;
+                border: none;
+                outline: none;
+                .modal-header{
+                    border: none;
+                    padding: 0;
+                    display: block;
+                    border-top: 0;
+                    border-top-left-radius: 0;
+                    border-top-right-radius: 0;
+                    position: relative;
+                    .close{
+                        color: #231f20;
+                        background-color: #fff;
+                        border-radius: 100%;
+                        position: absolute;
+                        right: 10px;
+                        bottom: -30px;
+                        width: 30px;
+                        height: 30px;
+                        z-index: 9;
+                        @media (max-width: 375px){
+                            width: 25px;
+                            height: 25px;
+                        }
+                        span{
+                            font-size: 30px;
+                            display: block;
+                            @media (max-width: 375px){
+                                font-size: 26px;
+                            }
+                        }
+                    }
+                }
+                .modal-body{
+                    video{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+    
+}
+/* ABOUT VIDEO CSS END HERE */
